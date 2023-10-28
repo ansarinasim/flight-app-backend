@@ -28,7 +28,8 @@ app.use(bodyParser.json());
 
 app.use(
   cors({
-    origin: "http://localhost:4200",
+    // origin: "http://localhost:4200",
+    origin: "https://ansarinasim.github.io/demo-flight-booking-app/client/home",
   })
 );
 // app.use("*", function (req, res) {
