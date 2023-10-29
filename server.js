@@ -28,12 +28,10 @@ app.use(bodyParser.json());
 
 app.use(
   cors({
-    origin: "http://localhost:4200",
+    origin: "https://demo-flight-booking.netlify.app",
   })
 );
-// app.use("*", function (req, res) {
-//   res.sendFile(path.join(--dirname, "./client/docs/index.html"));
-// });
+
 
 app.get(`/city-and-airport-search/:parameter`, (req, res) => {
   const parameter = req.params.parameter;
